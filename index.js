@@ -53,12 +53,18 @@ function setApi(data) {
 
 
 // if (process.env.NODE_ENV === 'production') {
-//   app.use(express.static('public/build'));
+//   
 //   const path = require('path');
 //   app.get('*', (req, res) => {
 //     res.sendFile(path.resolve(__dirname, 'public', 'build', 'index.html'));
 //   })
 // }
+
+app.use(express.static('public/build'));
+
+app.get('*', (req, res) => {
+  res.sendFile(path.resolve(__dirname, 'public', 'build', 'index.html'));
+})
 
 var port = process.env.PORT || 1120;
 app.listen(port);
