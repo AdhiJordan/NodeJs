@@ -60,10 +60,10 @@ var port = process.env.PORT || 1121;
 
 if (process.env.NODE_ENV === 'production') {
   // Serve any static files
-  app.use(express.static(path.join(__dirname, 'static/js')));
+  app.use(express.static(path.join(__dirname, 'ClientApp/build/static/js')));
   // Handle React routing, return all requests to React app
   app.get('*', function(req, res) {
-    res.sendFile(path.join(__dirname, 'static/js/', '*.js'));
+    res.sendFile(path.join(__dirname, 'ClientApp/build/static/js/', '*.js'));
   });
 }
 
