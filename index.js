@@ -50,11 +50,14 @@ function setApi(data) {
   })
 }
 
-app.use(express.static('ClientApp/build'));
+const path = require('path')
 
+app.use(express.static(path.join(__dirname, 'client/build')))
+// Anything that doesn't match the above, send back index.html
 app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'ClientApp', 'build', 'index.html'));
+  res.sendFile(path.join(__dirname + '/client/build/index.html'))
 })
+
 
 var port = process.env.PORT || 1121;
 
