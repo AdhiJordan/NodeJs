@@ -61,6 +61,5 @@ function setApi(data) {
 //   })
 // }
 
-app.listen(process.env.NODE_ENV  || 1114, function () {
-  console.log('app is listening on port 1114');
-})
+var port = process.enc.PORT || 1120;
+app.listen(port);
