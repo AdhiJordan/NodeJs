@@ -11,7 +11,6 @@ var http = require('http');
 
 app.use(cors());
 
-app.use(express.static('public'))
 
 let blogFolderPath = [], blog = null;
 let blogList = [];
@@ -61,5 +60,5 @@ function setApi(data) {
 //   })
 // }
 
-var port = process.enc.PORT || 1120;
+var port = process.env.PORT || 1120;
 app.listen(port);
