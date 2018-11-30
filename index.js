@@ -60,10 +60,10 @@ function setApi(data) {
 //   })
 // }
 
-app.use(express.static('public/build'));
+app.use(express.static('ClientApp/build'));
 
 app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'public', 'build', 'index.html'));
+  res.sendFile(path.resolve(__dirname, 'ClientApp', 'build', 'service-worker.js'));
 })
 
 var port = process.env.PORT || 1120;

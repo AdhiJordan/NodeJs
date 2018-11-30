@@ -35,22 +35,22 @@ export default class LeadsUniversityThree extends React.Component {
         });
     }
 
-    smoothScroll(){
-    timer: null,
+    smoothScroll = {
+        timer: null,
 
-    function stop () {
-        clearTimeout(this.timer);
-    },
+        stop: function () {
+            clearTimeout(this.timer);
+        },
 
-    function scrollTo (id, callback) {
-        var settings = {
-            duration: 1000,
-            easing: {
-                outQuint: function (x, t, b, c, d) {
-                    return c * ((t = t / d - 1) * t * t * t * t + 1) + b;
+        scrollTo: function (id, callback) {
+            var settings = {
+                duration: 1000,
+                easing: {
+                    outQuint: function (x, t, b, c, d) {
+                        return c * ((t = t / d - 1) * t * t * t * t + 1) + b;
+                    }
                 }
-            }
-        };
+            };
             var percentage;
             var startTime;
             var node = document.getElementById(id);

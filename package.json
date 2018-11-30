@@ -9,7 +9,7 @@
   },
   "scripts": {
     "start": "node index.js",
-    "build": "webpack -- config webpack.config.js"
+    "build": "react-scripts build"
   },
   "repository": {
     "type": "git"

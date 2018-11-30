@@ -51,23 +51,6 @@ class TopNav extends React.Component {
                                 <Link to="/pricing" className="nav-link liq-nav-link">PRICING</Link>
                             </li>
 
-                            <li className={(this.state.activeNav === "developers") ? "nav-item dropdown  pt-2 active" : "nav-item dropdown  pt-2"}>
-                                <a className="nav-link liq-nav-link ml-2 mr-2 mb-2">DEVELOPERS</a>
-                                <span aria-labelledby="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>
-                                <div className="dropdown-menu  row popupCard" style={{minWidth: "20rem", left: "-80%"}}>
-                                    <div className="row d-flex justify-content-center">
-                                        <div className="pointerDesign"></div>
-                                        <span><img src="/img/icon-stack.png" alt="icon-collection" />
-                                            <a href="https://developer.leadiq.com/" className="popupData">
-                                                <h6 className="m-2 dropdown-item api-reference">
-                                                    <b>Full API Reference</b>
-                                                </h6>
-                                            </a>
-                                        </span>
-                                    </div>
-                                </div>
-                            </li>
-
                             <li className={(this.state.activeNav === "resources") ? "nav-item  dropdown pt-2 active" : "nav-item  dropdown pt-2"}>
                                 <a href="/" className="nav-link liq-nav-link ml-2 mr-2 mb-2">RESOURCES</a>
                                 <span  aria-labelledby="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"></span>

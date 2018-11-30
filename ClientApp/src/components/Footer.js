@@ -64,6 +64,9 @@ class Footer extends React.Component {
                                 <li className="nav-item">
                                     <a href="https://angel.co/leadiq/jobs" className="nav-link liq-footer-link">Careers</a>
                                 </li>
+                                <li className="nav-item">
+                                    <a href="https://developer.leadiq.com/" className="nav-link liq-footer-link">Developers</a>
+                                </li>
                             </ul>
                             <ul className="nav flex-column">
                                 <li className="nav-item">

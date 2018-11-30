@@ -30,6 +30,8 @@ import Videolicious from './pages/Videolicious';
 import Videos from './pages/Videos';
 import Webinar from './pages/Webinar';
 
+import ThankYou from './components/ThankYou';
+
 
 
 class App extends React.Component {
@@ -70,6 +72,7 @@ class App extends React.Component {
                         <Route exact path='/account-executives' component={() => (<div><TopNav /><CampaignBuilder /></div>)} />
                         <Route exact path='/category' component={Category} />
                         <Route exact path='/university' component={University} />
+                        <Route exact path='/thank-you-success/' component={ThankYou} />
                         <Route exact path='/get-100-free-leads' component={GetLeads} />
                         <Route exact path='/leadiq-university-one' component={LeadsUniversityOne} />
                         <Route exact path='/leadiq-university-two' component={LeadsUniversityTwo} />

@@ -5,7 +5,6 @@ import WatchDemo from '../components/buttons/WatchDemo';
 import PartnerCard from '../components/cards/PartnerCard';
 import TestimonialCard from '../components/cards/TestimonialCard';
 import CheckboxItem from '../components/CheckboxItem';
-import axios from 'axios';
 
 class Home extends React.Component {
 
@@ -17,10 +16,6 @@ class Home extends React.Component {
     }
 
     componentDidMount() {
-        axios.get('/api/listBlogs').then((res) => {
-            console.log("res", res);
-        })
-
         window.scrollTo(0, 0)
         navigator.sayswho = (function () {
             var ua = navigator.userAgent, tem,

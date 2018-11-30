@@ -31,7 +31,7 @@ class RateMyPitch extends Component {
         window.scrollTo(0, 0)
     }
 
-    handleClickOpen(e){
+    handleClickOpen = (e) => {
         e.preventDefault();
 
         fetch('https://content.leadiq.com/acton/eform/35094/42804309-9c10-4fd1-bafe-7621ae8d9b51/d-ext-0001', {
@@ -48,7 +48,7 @@ class RateMyPitch extends Component {
         });
     };
 
-    handleClose(){
+    handleClose = () => {
         this.setState({ open: false });
     };
 

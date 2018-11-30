@@ -23,11 +23,11 @@ class PodcastVideo extends React.Component {
         };
     }
 
-    handleClickOpen()  {
+    handleClickOpen = () => {
         this.setState({ open: true });
     };
 
-    handleClose() {
+    handleClose = () => {
         this.setState({ open: false });
     };
 

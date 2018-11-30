@@ -46,14 +46,14 @@ class VideoCard extends React.Component {
         });
     }
 
-    handleClickOpen(videoLinks) {
+    handleClickOpen = (videoLinks) => {
         this.setState({
             open: true,
             videoLinkSet: videoLinks
         });
     };
 
-    handleClose() {
+    handleClose = () => {
         this.setState({ open: false });
     };
 

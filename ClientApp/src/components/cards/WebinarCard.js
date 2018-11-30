@@ -78,7 +78,7 @@ class WebinarCard extends React.Component {
         }
     }
 
-    handleClickOpen() {
+    handleClickOpen = () => {
         this.setState({ open: true }, () => {
             if (localStorage.getItem('email')) {
                 this.setState({
@@ -93,7 +93,7 @@ class WebinarCard extends React.Component {
 
     };
 
-    handleClose() {
+    handleClose = () => {
         this.setState({ open: false });
     };
 

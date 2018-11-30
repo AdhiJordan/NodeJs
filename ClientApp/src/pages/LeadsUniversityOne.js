@@ -36,14 +36,14 @@ export default class LeadsUniversityOne extends React.Component {
         });
     }
 
-    smoothScroll(){
+    smoothScroll = {
     timer: null,
 
-    function stop () {
+    stop: function () {
         clearTimeout(this.timer);
     },
 
-    function scrollTo (id, callback) {
+    scrollTo: function (id, callback) {
         var settings = {
             duration: 1000,
             easing: {

@@ -3,7 +3,6 @@ import FreeLeads from '../components/buttons/FreeLeads';
 import SalesTalk from '../components/buttons/SalesTalk';
 import Subscribe from '../components/buttons/Subscribe';
 import partner from "./../data/partners-free-leads.json";
-import axios from 'axios';
 
 export default class Pricing extends React.Component {
     constructor(props) {

@@ -64,7 +64,7 @@ class Videos extends React.Component {
         });
     };
 
-    handleClose() {
+    handleClose = () => {
         this.setState({ open: false });
     };
 
