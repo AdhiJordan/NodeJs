@@ -53,14 +53,14 @@ function setApi(data) {
 }
 
 
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static('public/build'));
-  const path = require('path');
-  app.get('*', (req, res) => {
-    res.sendFile(path.resolve(__dirname, 'public', 'build', 'index.html'));
-  })
-}
+// if (process.env.NODE_ENV === 'production') {
+//   app.use(express.static('public/build'));
+//   const path = require('path');
+//   app.get('*', (req, res) => {
+//     res.sendFile(path.resolve(__dirname, 'public', 'build', 'index.html'));
+//   })
+// }
 
-app.listen(1114, function () {
+app.listen(process.env.NODE_ENV  || 1114, function () {
   console.log('app is listening on port 1114');
 })
