@@ -8,11 +8,11 @@ var app = express();
 // view engine setup
 
 
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'ClientApp/public')));
 
 //rendering html pages and data via client side......
 app.get('*', function(req, res){
-  res.sendFile(path.resolve(__dirname, 'public', 'index.html'))
+  res.sendFile(path.resolve(__dirname, 'ClientApp', 'public', 'index.html'))
 });
 
 

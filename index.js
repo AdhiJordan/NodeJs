@@ -11,10 +11,6 @@ var http = require('http');
 
 app.use(cors());
 
-
-
-
-
 let blogFolderPath = [], blog = null;
 let blogList = [];
 
@@ -54,10 +50,10 @@ function setApi(data) {
   })
 }
 
-app.use(express.static('ClientApp/build'));
+app.use(express.static('ClientApp/public'));
 
 app.get('*', (req, res) => {
-  res.sendFile(path.resolve(__dirname, 'ClientApp', 'build', 'service-worker.js'));
+  res.sendFile(path.resolve(__dirname, 'ClientApp', 'public', 'index.html'));
 })
 
 var port = process.env.PORT || 1120;
