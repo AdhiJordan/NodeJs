@@ -14,7 +14,7 @@ app.use(cors());
 let blogFolderPath = [], blog = null;
 let blogList = [];
 
-traverseDir('ClientApp/src/blogs');
+traverseDir('static/js/blogs');
 
 function traverseDir(dir) {
   fs.readdirSync(dir).forEach(file => {
